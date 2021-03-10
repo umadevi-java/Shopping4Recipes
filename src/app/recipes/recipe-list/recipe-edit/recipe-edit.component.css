@@ -1,0 +1,32 @@
+label {
+    margin-left: 30px;
+    width:200px;
+    display: inline-block;
+  }
+
+  .mat-raised-button {
+    margin-left: 30px;
+  }
+
+  .form-container{
+    margin-top: 30px;
+    border : 1px solid rgb(131, 122, 122);
+    
+  }
+
+  fxFlex{
+    margin-right: 30px;
+  }
+
+  mat-form-field{
+    padding-right: 30px;
+    border :rgb(52, 141, 17);
+  }
+  .mat-input-placeholder {
+    color: red; /* Any color */
+}
+ 
+
+
+
+  

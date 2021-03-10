@@ -1,0 +1,42 @@
+
+    
+    
+    <mat-card class="example-card">
+        <mat-card-header fxLayout fxLayoutAlign="start start">
+          <mat-card-title> {{ recipe.recipeName }} </mat-card-title>
+        
+        </mat-card-header>
+        <img mat-card-image style = "max-height: 300px; max-width: 300px ;" [src] = "recipe.recipeUrl" alt =  recipe.recipeName >
+        <mat-card-content>
+            <p> {{ recipe.desc }} </p>
+          </mat-card-content>
+    </mat-card >
+
+       
+    <section  class="example-section">
+    <span >
+      
+        <div *ngFor="let ingredient of recipe.ingredients ;let i = index">
+          <mat-checkbox  [(ngModel)]="ingredient.isChecked" >
+            {{ingredient.ingredientName}} ({{ ingredient.ingredientAmount}})
+          </mat-checkbox>
+        </div>
+      
+    </span>
+  </section>
+
+  
+    
+  <span>Manage Recipe</span>
+    
+  <mat-form-field appearance="fill">
+    <mat-label>Choose an option</mat-label>
+    <mat-select   >
+      <mat-option value="editRecipe" (click) = "onEditRecipe();"> Edit Recipe</mat-option>
+      <mat-option value="delete" (click) = "onDeleteRecipe()" >Delete </mat-option>
+      <mat-option value="toSL" (click) = "fetchSelectedItems()">To Shopping List</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  

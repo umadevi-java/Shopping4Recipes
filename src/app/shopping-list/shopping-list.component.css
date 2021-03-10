@@ -1,0 +1,33 @@
+label {
+    margin-left: 30px;
+    width:200px;
+    display: inline-block;
+}
+
+.small-text{
+    width:50px;
+}
+
+a{
+    cursor: pointer;
+}
+
+button{
+    margin-left: 10px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.form-container{
+    width :500px;
+    margin-top: 30px;
+    margin-left :30px;
+    padding-left :30px;
+    border : 2px solid #b2a5d1;
+    
+  }
+  
+
+ 

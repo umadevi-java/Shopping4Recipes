@@ -1,0 +1,23 @@
+<app-shopping-edit></app-shopping-edit>
+<div class="form-container">
+    <div>
+        <mat-form-field appearance="outline">
+          <!-- <input matInput (input) ="filterIngredients($event);"  -->
+          <input matInput (keyup.enter)="filterIngredients($event);"
+            name="search" placeholder= "Search" >
+          </mat-form-field>
+          <span><a><mat-icon>search</mat-icon></a></span>
+    </div>
+    
+      <div  *ngFor = "let ingredient of ingredients; let i = index">
+        <Label>{{ingredient.ingredientName}}</Label>
+        <mat-form-field class="small-text" appearance="outline">
+          <input matInput name ="amount" value= {{ingredient.ingredientAmount}}>
+        </mat-form-field>
+         <span ><button mat-flat-button color="accent" (click)= "onEditIngredient(i);" >Edit<mat-icon >mode</mat-icon></button></span>
+         <span ><button mat-raised-button color= "primary" (click)= "onAddToSL(ingredient);" >Buy<mat-icon >shopping_cart</mat-icon></button></span>
+      </div>
+  
+   
+</div>
+

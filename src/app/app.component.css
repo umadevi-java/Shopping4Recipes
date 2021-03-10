@@ -1,0 +1,15 @@
+.toolbar-tools {
+    display: flex;
+  }
+  
+  .menu-item {
+    color: beige;
+    text-transform: uppercase;
+    cursor:pointer;
+  }  
+
+  .menu-item-active {
+    background-color: rgb(252, 198, 81);
+    color: black;
+  }
+  

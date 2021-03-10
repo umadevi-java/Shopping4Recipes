@@ -1,0 +1,17 @@
+.form-container{
+    
+    margin-top: 30px;
+    margin-left :30px;
+    
+    
+  }
+
+  label {
+    margin-left: 30px;
+    width:200px;
+    display: inline-block;
+  }
+
+  button{
+    margin-left: 30px;
+  }

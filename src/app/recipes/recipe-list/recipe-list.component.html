@@ -1,0 +1,13 @@
+<br>
+<button mat-raised-button type = "button" (click) = "onAddRecipe()" color="accent">Add Recipe</button>
+<mat-list  *ngFor ="let recipeEl of recipes;let i = index">
+    
+    <mat-list-item style = "margin-top: 60px;">
+        <app-recipe-item
+        [routerLink] = "[i]"
+        [recipe] = "recipeEl"
+        >
+        </app-recipe-item>
+    </mat-list-item>
+    
+</mat-list>

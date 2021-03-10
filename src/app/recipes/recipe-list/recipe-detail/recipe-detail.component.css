@@ -1,0 +1,23 @@
+.example-card {
+    max-width: 470px;
+
+  }
+
+  .example-spacer {
+    flex: 0 1 auto  ;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
